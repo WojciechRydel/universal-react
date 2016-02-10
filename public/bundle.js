@@ -25471,7 +25471,7 @@
 				var _this2 = this;
 
 				var filteredContacts = this.props.contacts.filter(function (contact) {
-					return contact.name.indexOf(_this2.props.filterText) !== -1;
+					return contact.name.toLowerCase().indexOf(_this2.props.filterText) !== -1;
 				});
 
 				return _react2.default.createElement(
